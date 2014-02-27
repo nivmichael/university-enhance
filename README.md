@@ -1,4 +1,4 @@
 university-enhance
 ==================
 
-Enhancing student-professor interaction during classes
+Enhancing student-professor interaction during classes - NEW
