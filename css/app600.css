@@ -1,0 +1,45 @@
+#login_form .ui-input-btn {
+  	background: none repeat scroll 0 0 #29ACE3;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    height: 78px;
+    line-height: 1.9em;
+    margin: 0 auto;
+	text-align: center;
+}
+
+#begin_class_container img{width: 47%;}
+
+.clock_container h3 {
+	margin: 2px !important;
+}
+
+.clock_container .login_container{box-shadow:0 2px 7px 0 #AAAAAA;-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;margin-top: 8px;
+}
+
+#splash .splash_img{
+  	width: 100%;
+	position: relative;
+}
+#logo .splash_img{
+  	width: 100%;
+	position: relative;
+	margin-top: 46px;
+}
+#splash h2{
+	text-align: center;
+	font-size: 2em;
+}
+
+#clock{font-size: 50px;background: #EDEDED;}
+
+.clock_container label {padding: 0.2em 0.2em 0 0;display: inline-block;font-size:50px; font-weight: bold;}
+/* Portrait */
+@media screen and (orientation:portrait) {
+	
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+	
+}

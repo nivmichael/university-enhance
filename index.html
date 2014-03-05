@@ -38,19 +38,36 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/jquery.mobile-1.4.1.min.css">
         <link rel="stylesheet" href="css/ver2.min.css">
-        <link rel="stylesheet" href="include/css/app.css">
-        <link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 700px)' href="include/css/app600.css" />
-        <link rel='stylesheet' media='screen and (min-width: 700px)' href="include/css/apptab.css" />
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <link rel="stylesheet" href="css/app.css">
+        <link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 700px)' href="css/app600.css" />
+        <link rel='stylesheet' media='screen and (min-width: 700px)' href="css/apptab.css" />
         <script>
         	var href_url = 'https://secure.wanted.co.il/poll.tau.wanted.co.il/';
+        	function onLoad(){
+        		var data = {action : 'display_questions_for_class'};
+				var json_param = 'jsn=' + JSON.stringify(data);
+			    var req = new XMLHttpRequest();   // new HttpRequest instance 
+				req.open("POST", href_url, false);
+				req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+				req.onreadystatechange = function() {
+				  if (req.readyState == 4) {  	
+				    if (req.status == 200 || req.status == 0) {
+				      var data = JSON.parse(req.responseText);
+				      if( data.success) {
+				      	alert('OK!');
+				   	  }
+				    }
+				  }
+				};
+				req.send(json_param);
+        	}
 		</script>
     </head>
     <body style="visibility: hidden;" onload="onLoad()">
     	
     	<div data-role="page" id="Login_Page">
     		<div data-role="content" id="splash">
-    			<img class="splash_img" src="'images/splash_screen.png" />
+    			<img class="splash_img" src="images/splash_screen.png" />
     			<h2>AcadeMe TAU</h2>
     		</div>
 			<div data-role="content" style="display: none;" id="login_page">	
@@ -88,30 +105,21 @@
 		
     	
         <!-- Add your site or application content here -->
-        <!--<script src="js/vendor/zepto.min.js"></script>-->
-		<script src="js/vendor/jquery-2.0.2.min.js"></script>
+        <!--<script src="js/zepto.min.js"></script>-->
+		<script src="js/jquery-2.0.2.min.js"></script>
 		
         <!--<script src="js/helper.js"></script>-->
         
         <script src="js/jquery.validate.min.js"></script>
-        <script src="js/localization/messages_he.js"></script>
+        <script src="js/messages_he.js"></script>
         <!--<script type="text/javascript" src="js/jquery.mb.audio.js"></script>-->
         <script src="js/main.js?version=1.1"></script>
-			<script src="js/employer.js?version=1.1"></script>
-			<script>
-				var user_id = '';
-			</script>
-			<script src="js/job_seeker.js?version=1.1"></script>
-			<script src="js/vendor/iscroll.js"></script>
-			<script src="js/chat.js?version=1.1"></script>
-			<script>
-				var user_id = '';
-			</script>
-			<link rel="stylesheet" href="include/css/chat.css">
+			<script src="js/iscroll.js"></script>
+			<link rel="stylesheet" href="css/chat.css">
 		<!--<script src="js/custom-init.js"></script>-->
-        <script src="js/vendor/jquery.mobile-1.4.1.min.js"></script>
-        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
-        <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/jquery.mobile-1.4.1.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
         
         <div data-role="dialog" id="sure" data-title="האם להמשיך בפעולה?">
 		  <div data-role="content">

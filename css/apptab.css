@@ -1,0 +1,66 @@
+#splash h2{
+	text-align: center;
+	font-size: 4em;
+}
+
+.login_container {
+	width: 50%;	
+	text-align: center;
+	margin: 0 auto;
+}
+#login_form .ui-input-btn {
+  	background: none repeat scroll 0 0 #29ACE3;
+    color: #FFFFFF;
+    font-size: 3.9em;
+    height: 100px;
+    line-height: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+}
+.submit_container {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+#login_form {
+	padding-top: 138px;
+}
+.header_normal p {
+	font-size: 2em;
+    margin: 7px;
+    padding: 0 3%!important;
+}
+#course_name_header {
+	font-size: 	2.3em!important;
+}
+#begin_class_container {
+	padding-top: 66px;
+}
+.login_label{
+	font-size: 1.9em;
+}
+
+#clock{font-size: 96px;background: #EDEDED;font-weight: bold;padding: 8% 0 0 0;}
+
+.clock_container label {padding: 0.2em 0.2em 0 0;display: inline-block;font-size:96px; font-weight: bold;}
+
+#splash .splash_img{
+  	width: 34%;
+	position: relative;
+	margin-top: 46px;
+}
+
+#logo{text-align: center;}
+#logo .splash_img{
+  	width: 49%;
+	position: relative;
+	margin-top: 10%;
+}
+/* Portrait */
+@media screen and (orientation:portrait) {
+	
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+	
+}

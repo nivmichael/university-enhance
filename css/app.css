@@ -1,0 +1,369 @@
+body{direction: rtl;}
+* {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+.right_pannel {
+	background: #EDEDED;
+	box-shadow:11px 0 10px -10px #000000 inset;
+	-webkit-box-shadow:11px 0 10px -10px #000000 inset;
+	border:0;
+	border-right:1px solid black;
+}
+.clear{clear: }
+.custom_back_button{
+	background: url("/poll.tau.wanted.co.il/images/general_icons/custom_back_button.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0) !important;
+    border: medium none !important;
+    box-shadow: none;
+    height: 3em;
+    width: 2.5em;
+    text-shadow: none!important;
+	
+}
+#Login_Page input{direction: ltr;width:100%;}
+
+#login_error {
+	display: none;
+	color: red;
+}
+.login_container {
+	background: -moz-linear-gradient(top,  rgba(68,86,102,1) 0%, rgba(68,86,102,1) 1%, rgba(68,86,102,1) 71%, rgba(68,86,102,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(68,86,102,1)), color-stop(1%,rgba(68,86,102,1)), color-stop(71%,rgba(68,86,102,1)), color-stop(100%,rgba(68,86,102,0)));
+	background: -webkit-linear-gradient(top,  rgba(68,86,102,1) 0%,rgba(68,86,102,1) 1%,rgba(68,86,102,1) 71%,rgba(68,86,102,0) 100%);
+	background: -o-linear-gradient(top,  rgba(68,86,102,1) 0%,rgba(68,86,102,1) 1%,rgba(68,86,102,1) 71%,rgba(68,86,102,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(68,86,102,1) 0%,rgba(68,86,102,1) 1%,rgba(68,86,102,1) 71%,rgba(68,86,102,0) 100%);
+	background: linear-gradient(to bottom,  rgba(68,86,102,1) 0%,rgba(68,86,102,1) 1%,rgba(68,86,102,1) 71%,rgba(68,86,102,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#445666', endColorstr='#00445666',GradientType=0 );
+	-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
+
+}
+.login_label{
+	text-align: center;
+	font-size: 1.1em;
+	color: #FFFFFF;
+	padding-top: 2%;
+	
+}
+#login_form .ui-submit{background: #29ace3;color: #FFFFFF;}
+#login_form {padding-top:50px }
+
+.pretty{}
+.login_container .error {color: #FF0000;display: block;text-align: center;width: 100%;}
+
+.header_normal {
+	padding: 8px;
+	box-shadow: #aaa 1px 1px 1px 1px;
+	-webkit-box-shadow:  #aaa 1px 1px 1px 1px;
+	-moz-box-shadow:  #aaa 1px 1px 1px 1px;
+	border: none;
+	min-height: 42px;
+}
+.header_marginer{display: inline-block;padding-right: 35%}
+
+/* Employer app*/
+.course_container{position: relative; display: inline-block;padding: 3%;width: 35%;}
+.course_container > .course_title{position: absolute;bottom:15px;font-size: 0.5em;}
+.course_container > a{text-decoration: none;}
+.course_container img{
+	width: 100%;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+	box-shadow:0 0 10px 2px #AAAAAA;
+	-webkit-box-shadow:0 0 10px 2px #AAAAAA;
+	-moz-box-shadow:0 0 10px 2px #AAAAAA;
+	background: #ededed;
+}
+@media screen and (orientation:portrait) { /*CSS for portrait*/ 
+	.course_container img{max-width: 132px;}
+}
+@media screen and (orientation:landscape) { /*CSS for landscape*/ 
+	.course_container img{max-width: 450px;}
+}
+.line_center{text-align: center;}
+
+#begin_class_container{margin: 0 auto;text-align: center;min-height: 500px;}
+#begin_class_container a{text-decoration: none;}
+#begin_class_container img{margin-top: 1em;width: 33%;}
+.course_start_title{color: #445666;font-size: 2em;text-align: center; width: 100%;}
+#course_name_header{font-size: 1.3em;}
+.course_name_header{font-size: 2.3em;}
+.class_error{display: none;font-size: 1.4em;color:#e22b23; }
+.class_active{
+	-webkit-border-radius: 15px !important;
+	-moz-border-radius: 15px !important;
+	border-radius: 15px !important;
+	box-shadow:0 0 18px 5px #29ACE3 !important;
+	-webkit-box-shadow:0 0 18px 5px #29ACE3 !important;
+	-moz-box-shadow:  0 0 18px 5px #29ACE3 !important;
+}
+
+/*Clock*/
+#clock{font-size: 50px;background: #EDEDED;}
+.clock_container{display:none;text-align:center;}
+.clock_container .login_container{box-shadow:0 2px 7px 0 #AAAAAA;
+-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;}
+
+.clock_container label {padding: 0.2em 0.2em 0 0;display: inline-block;font-size:50px; font-weight: bold;}
+.clock_container .login_container{padding-top: 0.3em;}
+.clock_container h3 {
+	color: #FFFFFF;
+	margin-bottom: 1em;
+	padding: 0 !important;
+	font-size: 1.8em;
+}
+#stop_class {
+	background: #EDEDED;
+	text-align: left;
+	cursor: pointer;
+	-webkit-border-radius: 0 0 8px 8px;-moz-border-radius: 0 0 8px 8px;border-radius: 0 0 8px 8px;
+}
+#stop_class img{position: relative;bottom: 9px;left: 9px;}
+#class_ended{display: none;text-align: center;overflow: hidden;}
+#class_ended_img{width: 67%;}
+
+.statistics {
+	bottom: 9px;
+    margin: 0 auto;
+    padding-top: 0;
+    position: relative;
+    text-align: center;
+}
+
+.statistics img{}
+
+
+#job_seeker_class_page{position: relative;}
+.chat_job_seeker{position: absolute;bottom: 10px;right: 10px;}
+#chat_job_seeker-popup{width: 80%;left: 10%;right: 10%}
+.chat_job_seeker img{width:52%;}
+
+/*Chat*/
+.login_container.active_user{background:none repeat scroll 0 0 #47D6C6; }
+.clock_container .login_container{box-shadow:0 2px 7px 0 #AAAAAA;-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;margin-top: 57px;}
+.chat_text{background: #EDEDED;min-height: 50px;box-shadow:0 2px 7px 0 #AAAAAA;-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;}
+.chat_text p{
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 5px;
+	background: #ffffff;
+	-webkit-border-radius:0 0  8px 8px;
+	-moz-border-radius: 0 0  8px 8px;
+	border-radius:  0 0  8px 8px;
+}
+
+.chat_send_button{
+	width: 20%;
+	display: inline-block;
+	background:none repeat scroll 0 0 #47D6C6!important;;
+	color: #ffffff!important;
+	height: 14px;
+}
+#chat .ui-input-text {
+	width: 63%;
+	display: inline-block;
+}
+/*Time bar*/
+.time_element{
+	background:none repeat scroll 0 0 #EDEDED;
+	box-shadow:0 2px 7px 0 #AAAAAA;
+	-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;
+	-webkit-border-radius: 8px;-moz-border-radius:  8px;border-radius:  8px;
+	width: 100%;
+	min-height:68px;
+	margin-bottom: 26px;
+}
+
+.time_bar {
+  background-image: url("/poll.tau.wanted.co.il/images/job_seeker_icon/time_bar.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px; 
+  background-origin:content-box;
+  background-size: 98% 50px;
+  height: 72px;
+  width: 98%;
+  position: relative;
+}
+
+.time_elapesed {
+	  background: none no-repeat scroll 0 0 #47D6C6;
+	  bottom: -30px;
+	  height: 5px;
+	  position: relative;
+	  right: 4%;
+	  width: 0px;
+	  -webkit-border-radius: 8px;-moz-border-radius:  8px;border-radius:  8px;
+}
+#splash{text-align:center; padding-top: 66px;}	
+
+#sure .ui-dialog-contain {font-size: 1.5em; margin-top: 218px;}
+#employer_class_page {position: relative;}
+.ui-mobile label, .ui-controlgroup-label{margin: 0!important;}
+
+/*Ranking*/
+.ranking_container {
+
+}	
+.ranking_container div{
+	background: none repeat scroll 0 0 #EDEDED;
+	box-shadow: 0 2px 7px 0 #AAAAAA;
+	-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	width: 100%;
+	min-height: 99px;
+	text-align: center;
+	margin-top: 5%;
+}
+.ranking_container div a {
+	text-decoration: none;
+	color: #445666!important;
+	font-size: 2em;
+	line-height: 2.5em;
+}
+
+/*Admin Ranking*/
+#courses_container .ui-collapsible-content {
+	box-shadow:0px 0px 10px 0px black inset;
+	-webkit-box-shadow:0px 0px 10px 0px black inset;
+	-moz-box-shadow:0px 0px 10px 0px black inset;
+}	
+
+.admin_ranking_container div{
+	background: none repeat scroll 0 0 white;
+	box-shadow: 0 2px 7px 0 #AAAAAA;
+	-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	width: 100%;
+	min-height: 99px;
+	text-align: center;
+	margin: 1% 0 1%;
+}
+
+.admin_ranking_container div a {
+	cursor:pointer;
+	text-decoration: none;
+	color: #445666!important;
+	font-size: 2em;
+	line-height: 300%;
+}
+
+.admin_ranking_container span a {
+	font-size: 20px;
+}
+
+/*UI fixes*/
+.ui-collapsible-heading-toggle{
+    text-align:right!important;
+    direction: rtl!important;
+}
+#accordion p{text-align: center;}
+#accordion span{
+	display: inline-block;
+    margin-left: 22px;
+    width: 41%;
+}
+.ui-header .ui-title, .ui-footer .ui-title { margin: 0.6em 10% 0.8em !important;}
+/*seekr misc*/
+.class_phase {
+	text-align: center;
+}
+
+.class_phase .class_phase_contaner{
+	display: inline-block;
+	width: 30%;
+	margin: 1% 1% 5%;
+	background: none repeat scroll 0 0 #EDEDED;
+	box-shadow: 0 2px 7px 0 #AAAAAA;
+	-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	min-height: 34px;
+	color: #445666;
+	font-size: 0.8em;
+	font-weight:bold;
+	line-height: 2.4em;
+}
+.class_phase .class_phase_contaner.active{
+	background: #47D6C6;
+}
+
+.seeker_question{display: none;position: relative;}
+.seeker_question h3{font-weight: normal;font-size: 1.3em;}
+.vote_box{
+	position: absolute;
+	bottom: 7px;
+	left: 7px;
+	width: 100px;
+	background:none repeat scroll 0 0 #47D6C6;
+	box-shadow: 0 2px 7px 0 #AAAAAA;
+	-webkit-box-shadow: 0 2px 7px 0 #AAAAAA;
+	-moz-box-shadow:  0 2px 7px 0 #AAAAAA;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1px;
+	color: #445666;
+}
+.seeker_question .time_element{padding-bottom: 53px;}
+.fake_q {width:100px;height: 100px;position: absolute;bottom: 0;left: 0;}
+
+.time_element .ui-slider{padding-left: 6px;padding-top: 35px;}
+
+/*Employer result bars*/
+.stats_score_container {min-height:30px ;width: 100%;position: relative;padding: 0.2em 0.7em;font-size: 1.2em;color:#445666;}
+.stats_score_bar{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	position: relative;
+	width: 90%;
+	background: #445666;
+	min-height: 43px;
+	margin: 0 auto;
+}
+.stats_score {
+	float: right;
+	position: relative;
+	background: #47D6C6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	min-height: 30px;
+	padding: 10px 0 3px;
+}
+.stats_title{font-size: 1.5em;}
+.stats_score_nums_right{position: absolute;right:2em;font-weight: bold;}
+.stats_score_nums_left{position: absolute;left:3px;top:66%;font-weight: bold;}
+
+#ranking_semester_accordion > .ui-collapsible-content{padding-right: 3%;}
+#audio_player{display: none;}
+#class_not_started {display:none;}
+#class_not_started h1{text-align: center;}
+
+.ui-icon-statistics {
+	background-image: url("../../images/statistics_icon.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-icon-statistics {
+		background-image: url("../../images/statistics_icon_highres.png");
+		background-size: 18px 18px !important;
+	}
+	...more HD icon rules go here...
+}
