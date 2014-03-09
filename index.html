@@ -43,12 +43,7 @@
         <link rel='stylesheet' media='screen and (min-width: 700px)' href="css/apptab.css" />
         <script>
         	var href_url = 'https://secure.wanted.co.il/poll.tau.wanted.co.il/';
-        	$(document).on("mobileinit", function(){
-			  //apply overrides here
-			  $.mobile.allowCrossDomainPages = true;
-			  $.support.cors = true;
-			
-			});
+        	
         	function onLoad(){
         		try
 				  {
@@ -63,9 +58,11 @@
 					      var data = JSON.parse(req.responseText);
 					      if( data.success) {
 					      	alert('OK!');
-					   	  }
-					    } else {
+					   	  } else {
 					    	alert('NO1!');
+					    }
+					    } else {
+					    	alert('NO2!');
 					    }
 					  } else {
 					    	alert('NO2!');
