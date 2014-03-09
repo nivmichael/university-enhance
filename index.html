@@ -63,14 +63,11 @@
         	}
 		</script>
     </head>
-    <body style="visibility: hidden;" onload="onLoad()">
+    <body onload="onLoad()">
     	
     	<div data-role="page" id="Login_Page">
-    		<div data-role="content" id="splash">
-    			<img class="splash_img" src="images/splash_screen.png" />
-    			<h2>AcadeMe TAU</h2>
-    		</div>
-			<div data-role="content" style="display: none;" id="login_page">	
+    		
+			<div data-role="content"  id="login_page">	
 				<!--<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>-->
 				<form data-ajax="false" method="post" name="login" id="login_form">    
 					<input type="hidden" value="my-account/posts/?type=job-seeker&cat=student" name="referrer">
@@ -120,7 +117,7 @@
         <script src="js/jquery.mobile-1.4.1.min.js"></script>
         <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="js/jquery.ui.touch-punch.min.js"></script>
-        
+        <script type="text/javascript" src="phoneGap.js">
         <div data-role="dialog" id="sure" data-title="האם להמשיך בפעולה?">
 		  <div data-role="content">
 		    <h3 class="sure-1">???</h3>
