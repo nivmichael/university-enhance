@@ -118,7 +118,7 @@
     
     
     <access origin="*" />
-    <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+    <!--<access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="nl.x-services.plugins.insomnia" version="3.0" />
     <gap:plugin name="org.apache.cordova.core.inappbrowser" />
