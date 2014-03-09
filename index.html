@@ -53,17 +53,21 @@
 				  if (req.readyState == 4) {  	
 				    if (req.status == 200 || req.status == 0) {
 				      var data = JSON.parse(req.responseText);
-				      if( data.success) {
+				      if( data) {
 				      	alert('OK!');
 				   	  }
+				    } else {
+				    	alert('NO1!');
 				    }
-				  }
+				  } else {
+				    	alert('NO2!');
+				   }
 				};
 				req.send(json_param);
         	}
 		</script>
     </head>
-    <body onload="onLoad()">
+    <body>
     	
     	<div data-role="page" id="Login_Page">
     		
@@ -90,6 +94,7 @@
 						<input type="submit" value="התחבר" class="login_enter">
 					</div>
 				</form>
+				<button onclick="onLoad()">click ne</button>
 				<!--
 				<video id="audio_player" width="0" height="0">
 				    <source src="sounds/effectsSprite1.mp3">
