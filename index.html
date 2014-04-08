@@ -42,14 +42,16 @@
         <link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 700px)' href="css/app600.css" />
         <link rel='stylesheet' media='screen and (min-width: 700px)' href="css/apptab.css" />
         <script>
-        
-        document.addEventListener("deviceready", function(e) {
-        	cordova.exec(null, null, "SplashScreen", "show", []);
-			window.setTimeout(function() {
-				cordova.exec(null, null, "SplashScreen", "hide", []);
-			},5000);
+        	document.addEventListener("deviceready", onDeviceReady, false);
+	        function onDeviceReady() {
+	        		alert('yyy');
+				    navigator.splashscreen.show();
+				    setTimeout(function() {
+				    	alert('xxx');
+					     navigator.splashscreen.hide();
+					}, 7000);
 					
-		}, "false");
+			}
         	var href_url = 'https://secure.wanted.co.il/test.poll.tau.wanted.co.il/';
         	/*
         	function onLoad(){
@@ -150,7 +152,7 @@
         <script src="js/jquery.mobile-1.4.1.min.js"></script>
         <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="js/jquery.ui.touch-punch.min.js"></script>
-        <!--<script type="text/javascript" src="phoneGap.js"></script>-->
+        <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript">
         	function hide_splash(e_id, next_id)	{
 				$('#' + e_id).hide();
