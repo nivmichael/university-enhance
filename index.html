@@ -93,11 +93,13 @@
     </head>
     <body>
     	<div data-role="page" id="Login_Page">
+    		<!--
 			<div data-role="content" id="splash">
 				<img class="splash_img" src="img/splash_screen.png" />
 				<h2>AcadeMe TAU</h2>
 			</div>
-			<div data-role="content" style="display: none;" id="login_page">	
+			-->
+			<div data-role="content" id="login_page">	
 				<!--<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>-->
 				<form data-ajax="true" method="post" name="login" id="login_form">    
 					<input type="hidden" value="my-account/posts/?type=job-seeker&cat=student" name="referrer">
@@ -157,7 +159,7 @@
 
 			/* Login Handler */
 			$( '#Login_Page' ).on( "pageshow", function() {
-				setTimeout(function(){hide_splash('splash', 'login_page')}, 10000);
+				//setTimeout(function(){hide_splash('splash', 'login_page')}, 10000);
 			 	$('#login_form').validate({
 				  submitHandler: function(form) {
 				    $('#login_error').hide();
