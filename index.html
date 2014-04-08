@@ -80,14 +80,7 @@
         		
         	}
         	*/
-        	document.addEventListener("deviceready", onDeviceReady, false);
-
-			function onDeviceReady() {
-			    navigator.splashscreen.show();
-			    setTimeout(function() {
-				     navigator.splashscreen.hide();
-				}, 5000);
-			}
+        	
 			
 		</script>
     </head>
@@ -157,7 +150,6 @@
 
 			/* Login Handler */
 			$( '#Login_Page' ).on( "pageshow", function() {
-				setTimeout(function(){hide_splash('splash', 'login_page')}, 3000);
 			 	$('#login_form').validate({
 				  submitHandler: function(form) {
 				    $('#login_error').hide();
@@ -188,8 +180,18 @@
 			  $.support.cors = true;
 			
 			});
+			
 			function encodeStr(uncoded) {
 				 return window.btoa(uncoded);
+			}
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			function onDeviceReady() {
+			    navigator.splashscreen.show();
+			    setTimeout(function() {
+				     navigator.splashscreen.hide();
+				}, 5000);
+				setTimeout(function(){hide_splash('splash', 'login_page')}, 10000);
 			}
         </script>
         
