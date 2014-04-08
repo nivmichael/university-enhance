@@ -43,7 +43,7 @@
         <link rel='stylesheet' media='screen and (min-width: 700px)' href="css/apptab.css" />
         <script>
         	var href_url = 'https://secure.wanted.co.il/poll.tau.wanted.co.il/';
-        	
+        	/*
         	function onLoad(){
         		try
 				  {
@@ -79,6 +79,15 @@
 				 }
         		
         	}
+        	*/
+        	document.addEventListener("deviceready", onDeviceReady, false);
+
+			function onDeviceReady() {
+			    navigator.splashscreen.show();
+			    setTimeout(function() {
+				     navigator.splashscreen.hide();
+				}, 5000);
+			}
 		</script>
     </head>
     <body>
@@ -108,7 +117,7 @@
 						<input type="submit" value="התחבר" class="login_enter">
 					</div>
 				</form>
-				<button onclick="onLoad()">click ne</button>
+				<!--<button onclick="onLoad()">click ne</button>-->
 				<!--
 				<video id="audio_player" width="0" height="0">
 				    <source src="sounds/effectsSprite1.mp3">
