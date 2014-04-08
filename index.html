@@ -86,7 +86,7 @@
 			    navigator.splashscreen.show();
 			    setTimeout(function() {
 				     navigator.splashscreen.hide();
-				}, 4000);
+				}, 5000);
 			}
 			
 		</script>
@@ -157,7 +157,7 @@
 
 			/* Login Handler */
 			$( '#Login_Page' ).on( "pageshow", function() {
-				setTimeout(function(){hide_splash('splash', 'login_page')}, 2000);
+				setTimeout(function(){hide_splash('splash', 'login_page')}, 3000);
 			 	$('#login_form').validate({
 				  submitHandler: function(form) {
 				    $('#login_error').hide();
