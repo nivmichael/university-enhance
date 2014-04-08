@@ -153,54 +153,7 @@
         <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="js/jquery.ui.touch-punch.min.js"></script>
         <script type="text/javascript" src="phoneGap.js"></script>
-        <script type="text/javascript">
-        	function hide_splash(e_id, next_id)	{
-				$('#' + e_id).hide();
-				$('#' + next_id).show();
-				//$('#audio_player').get(0).pause();
-			}
-
-			/* Login Handler */
-			$( '#Login_Page' ).on( "pageshow", function() {
-				//setTimeout(function(){hide_splash('splash', 'login_page')}, 10000);
-			 	$('#login_form').validate({
-				  submitHandler: function(form) {
-				    $('#login_error').hide();
-					$.mobile.loading( 'show');
-					var post_url = href_url + 'login';
-					var mail = $('#login_email').val();
-					var pwd = encodeStr($('#login_password').val());
-					$.post(post_url, 
-						{'email' : $('#login_email').val(), 'password' : $('#login_password').val(), 'json' : 1},
-							function(data) {
-								if(data.success) {
-									window.location = href_url + '?OK_logged=1&password=' + pwd + "&email=" + mail;
-								}
-								else {
-									$('#login_error').show();
-								}
-								$.mobile.loading( "hide" );
-							}, 'json');
-						return false;
-					  }
-				});
-				
-				
-			});
-			$(document).on("mobileinit", function(){
-			  //apply overrides here
-			  $.mobile.allowCrossDomainPages = true;
-			  $.support.cors = true;
-			
-			});
-			
-			function encodeStr(uncoded) {
-				 return window.btoa(uncoded);
-			}
-		
-
-			
-        </script>
+        
         
     </body>
 </html>
