@@ -44,9 +44,9 @@
         <script>
         
         document.addEventListener("deviceready", function(e) {
-        	navigator.splashscreen.show();
+        	cordova.exec(null, null, "SplashScreen", "show", []);
 			window.setTimeout(function() {
-				navigator.splashscreen.hide();
+				cordova.exec(null, null, "SplashScreen", "hide", []);
 			},5000);
 					
 		}, "false");
