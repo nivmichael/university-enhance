@@ -47,8 +47,6 @@
     <preference name="show-splash-screen-spinner" value="true" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
     <preference name="auto-hide-splash-screen" value="false" />
 	<preference name="AutoHideSplashScreen" value="false" />
-	<preference name="FadeSplashScreen" value="true" />
-	<preference name="fade-splash-screen-duration" value="7" />
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-minSdkVersion"      value="7" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
@@ -121,14 +119,14 @@
     
     <access origin="*" />
     <!--<access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+    <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="nl.x-services.plugins.insomnia" version="3.0" />
     <gap:plugin name="org.apache.cordova.core.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.device" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
 	<gap:plugin name="com.phonegap.plugins.childbrowser" />
-	<gap:plugin name="org.apache.cordova.splashscreen" />
-	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
+	
     <!--<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />-->
     
     <!--
