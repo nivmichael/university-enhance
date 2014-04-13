@@ -45,9 +45,9 @@
         <script>
         	document.addEventListener("deviceready", onDeviceReady, false);
 	        function onDeviceReady() {
-				    navigator.splashscreen.show();
 				    setTimeout(function() {
 					     navigator.splashscreen.hide();
+					     alert('ready');
 					}, 7000);
 					
 			}
