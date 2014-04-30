@@ -51,44 +51,6 @@
 					}, 7000);
 					
 			}
-        	var href_url = 'https://secure.wanted.co.il/test.poll.tau.wanted.co.il/';
-        	/*
-        	function onLoad(){
-        		try
-				  {
-				  var data = {action : 'display_questions_for_class'};
-					var json_param = 'jsn=' + JSON.stringify(data);
-				    var req = new XMLHttpRequest();   // new HttpRequest instance 
-					req.open("POST", href_url, false);
-					req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-					req.onreadystatechange = function() {
-					  if (req.readyState == 4) {  	
-					    if (req.status == 200 || req.status == 0) {
-					      var data = JSON.parse(req.responseText);
-					      if( data.success) {
-					      	alert('OK!');
-					   	  } else {
-					    	alert('NO1!');
-					    }
-					    } else {
-					    	alert('NO2!');
-					    }
-					  } else {
-					    	alert('NO2!');
-					   }
-					};
-					req.send(json_param);
-				  }
-				catch(err)
-				  {
-				  txt="There was an error on this page.\n\n";
-				  txt+="Error description: " + err.message + "\n\n";
-				  txt+="Click OK to continue.\n\n";
-				  alert(txt);
-				 }
-        		
-        	}
-        	*/
         	
 			
 		</script>
@@ -153,49 +115,6 @@
         <script src="js/jquery.ui.touch-punch.min.js"></script>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript">
-        	function hide_splash(e_id, next_id)	{
-				$('#' + e_id).hide();
-				$('#' + next_id).show();
-				//$('#audio_player').get(0).pause();
-			}
-
-			/* Login Handler */
-			$( '#Login_Page' ).on( "pageshow", function() {
-				//setTimeout(function(){hide_splash('splash', 'login_page')}, 10000);
-			 	$('#login_form').validate({
-				  submitHandler: function(form) {
-				    $('#login_error').hide();
-					$.mobile.loading( 'show');
-					var post_url = href_url + 'login';
-					var mail = $('#login_email').val();
-					var pwd = encodeStr($('#login_password').val());
-					$.post(post_url, 
-						{'email' : $('#login_email').val(), 'password' : $('#login_password').val(), 'json' : 1},
-							function(data) {
-								if(data.success) {
-									window.location = href_url + '?OK_logged=1&password=' + pwd + "&email=" + mail;
-								}
-								else {
-									$('#login_error').show();
-								}
-								$.mobile.loading( "hide" );
-							}, 'json');
-						return false;
-					  }
-				});
-				
-				
-			});
-			$(document).on("mobileinit", function(){
-			  //apply overrides here
-			  $.mobile.allowCrossDomainPages = true;
-			  $.support.cors = true;
-			
-			});
-			
-			function encodeStr(uncoded) {
-				 return window.btoa(uncoded);
-			}
 		
 
 			
